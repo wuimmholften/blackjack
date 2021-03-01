@@ -45,7 +45,15 @@ namespace Blackjack
 
                 if(respuesta == "si")
                 {
-                  
+                    // TODO 3: Si el jugador solicita una carta, generar aleatoriamente una carta de una baraja y agregarla a las cartas que tiene el jugador.
+                    JugadorValorCartas += random.Next(1,12); 
+
+                    if(JugadorValorCartas > 21)
+                    {
+                        Console.WriteLine("Excediste");
+                        break;
+                    }
+                    
                 }
 
                 else if (respuesta == "no")
