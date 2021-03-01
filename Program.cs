@@ -28,7 +28,6 @@ namespace Blackjack
             }
 
             // TODO 6: Cuando el jugador se detenga, generar aleatoriamente un número entre el 17 y el 26 (incluyendo ambos números). Este será el valor de "la casa" contra el cual debe competir el número obtenido por las cartas del jugador.
-            
             ComputadoraValorCartas += random.Next(1,11);
 
             switch(ComputadoraValorCartas)
@@ -71,7 +70,7 @@ namespace Blackjack
             {
                 if(JugadorValorCartas == 21)
                 {
-                    Console.WriteLine("BLACKJACK");
+                    Console.WriteLine("BLACKJACK!!!");
                     break;
                 }
                 Console.WriteLine("Escribe si para otra carta");
@@ -141,8 +140,7 @@ namespace Blackjack
             }
             //Aqui muestro los resultados de los valores obtenidos por la IA
             Console.WriteLine("Valor de cartas de la computadora: " + ComputadoraValorCartas.ToString());
-            Console.ReadLine();
-        
+            
         }
     }
 }
