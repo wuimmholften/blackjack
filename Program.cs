@@ -27,7 +27,6 @@ namespace Blackjack
                 JugadorValorCartas -= 10;
             }
 
-
             // TODO 2: Preguntar al jugador si desea quedarse con las cartas que tiene, o si solicita una carta
             while(true)
             {
@@ -52,7 +51,11 @@ namespace Blackjack
                         Console.WriteLine("Excediste");
                         break;
                     }
-                    
+                    else
+                    {
+                        // TODO 5: Volver a preguntar al jugador lo mismo que en el paso (2), hasta que el jugador decida detenerse o hasta que se pase de 21.
+                        continue;
+                    }
                 }
 
                 else if (respuesta == "no")
