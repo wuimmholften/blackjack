@@ -27,7 +27,6 @@ namespace Blackjack
                 JugadorValorCartas -= 10;
             }
 
-            
 
             // TODO 2: Preguntar al jugador si desea quedarse con las cartas que tiene, o si solicita una carta
             while(true)
@@ -67,4 +66,11 @@ namespace Blackjack
                 }
             }
 
-             
+             // TODO 4: Calcular el valor de las cartas que tiene el jugador (numérico) y mostrarlo cada vez que el jugador obtenga una carta. 
+            Console.WriteLine("Valor de cartas: " + JugadorValorCartas.ToString());
+
+            
+        
+        }
+    }
+}
