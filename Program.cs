@@ -111,7 +111,38 @@ namespace Blackjack
              // TODO 4: Calcular el valor de las cartas que tiene el jugador (numérico) y mostrarlo cada vez que el jugador obtenga una carta. 
             Console.WriteLine("Valor de cartas: " + JugadorValorCartas.ToString());
 
-            
+            // TODO 7: Condicion de victoria
+            if(JugadorValorCartas <= 21)   
+            {
+                
+                // TODO 8: Comparar ambos números mostrados para determinar el ganador, y mostrar el resultado
+                if(JugadorValorCartas == ComputadoraValorCartas)
+                {
+                    Console.WriteLine("El jugador y la computadora empataron");
+                    
+                }
+                else if(JugadorValorCartas < ComputadoraValorCartas && ComputadoraValorCartas <= 21)
+                {
+                    Console.WriteLine("La computadora gano");
+                    
+                }
+                else if(ComputadoraValorCartas > 21)
+                {
+                    Console.WriteLine("La computadra excedio, el jugador gana");
+                }
+                else if(ComputadoraValorCartas == 21)
+                {
+                    Console.WriteLine("La computadora gano!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("La computadora gano, el jugador excedio");
+            }
+            //Aqui muestro los resultados de los valores obtenidos por la IA
+            Console.WriteLine("Valor de cartas de la computadora: " + ComputadoraValorCartas.ToString());
+            Console.ReadLine();
+        
         }
     }
 }
