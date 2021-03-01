@@ -27,6 +27,45 @@ namespace Blackjack
                 JugadorValorCartas -= 10;
             }
 
+            // TODO 6: Cuando el jugador se detenga, generar aleatoriamente un número entre el 17 y el 26 (incluyendo ambos números). Este será el valor de "la casa" contra el cual debe competir el número obtenido por las cartas del jugador.
+            
+            ComputadoraValorCartas += random.Next(1,11);
+
+            switch(ComputadoraValorCartas)
+            {
+                case 1:
+                ComputadoraValorCartas = 17;
+                break;
+                case 2:
+                ComputadoraValorCartas = 18;
+                break;
+                case 3:
+                ComputadoraValorCartas = 19;
+                break;
+                case 4:
+                ComputadoraValorCartas = 20;
+                break;
+                case 5: 
+                ComputadoraValorCartas = 21;
+                break;
+                case 6:
+                ComputadoraValorCartas = 22;
+                break;
+                case 7:
+                ComputadoraValorCartas = 23;
+                break;
+                case 8:
+                ComputadoraValorCartas = 24;
+                break;
+                case 9:
+                ComputadoraValorCartas = 25;
+                break;
+                case 10:
+                ComputadoraValorCartas = 26;
+                break;
+
+            }
+
             // TODO 2: Preguntar al jugador si desea quedarse con las cartas que tiene, o si solicita una carta
             while(true)
             {
@@ -73,7 +112,6 @@ namespace Blackjack
             Console.WriteLine("Valor de cartas: " + JugadorValorCartas.ToString());
 
             
-        
         }
     }
 }
