@@ -16,7 +16,7 @@ namespace Blackjack
             // TODO 1: El jugador comienza con un conjunto de cartas vacío
             int JugadorValorCartas = 0;
             int ComputadoraValorCartas = 0;
-
+            //10. (fix) Modificar la lógica de inicio de juego para entregar la primer tarjeta al jugador automáticamente sin que lo solicite.
             Random random = new Random();
             //Se despliegan las cartas para el jugador
             JugadorValorCartas += random.Next(1,12); //Numero aleatorio de 1 - 11
